@@ -1,11 +1,45 @@
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Tangerine" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Mike & Leanne</h1>
-  <h2>Wedding 2019</h2>
+
+  <section class="banner">
+    <div class="banner__inner">
+      <h1>Leanne & Mike</h1>
+      <h2>Are Getting Married</h2>
+    </div>
+  </section>
+  
+  <section class="save">
+    <div class="save__inner">
+      <h3>Save the date</h3>
+      <p>22nd December 2019</p>
+    </div>
+  </section>
+
+  <section class="donation">
+    <div class="donation__inner">
+      <h4>Your presence at our wedding is gift enough, however we know many of you are keen to make a gift to help us with our next steps in life and the potential welcoming of tiny feet. If you would like to, we wanted to make it easy for you by simply clicking this button.</h4>
+      <h4>Can't wait to see you on the day.</h4>
+      <form class="donation__form">
+        <select class="donation__amount">
+          <option value="sku_EZK9v982ntnuPd">£10</option>
+        </select>
+        <button id="checkout-button" role="link" class="button">Gift</button>
+      </form>
+      <div id="error-message"></div>
+    </div>
+  </section>
+
+  <section class="map">
+    <iframe class="map__map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfwVthOVPeUgR4uPq_EOudE4&key=AIzaSyBV9QPNoOyd_g4lI9hufA64_e6KRIMstYg&zoom=10" allowfullscreen></iframe>
+  </section>
+
+  <script src="https://js.stripe.com/v3"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
   

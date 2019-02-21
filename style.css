@@ -41,17 +41,90 @@ table {
 }
 
 body {
-  background-image: url('https://images.pexels.com/photos/639110/pexels-photo-639110.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
-  font-family: 'Tangerine', cursive;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 h1 {
   font-size: 100px;
+  font-family: 'Tangerine', cursive;
 }
 
 h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
   font-size: 60px;
+  font-family: 'Tangerine', cursive;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 2px;
+  background-color: rgb(46, 139, 87);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(46, 139, 87, 0.9);
+}
+
+.banner {
+  background-image: url('https://images.pexels.com/photos/639110/pexels-photo-639110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 15%;
+  background-color: lightgrey;
+}
+
+.donation {
+  padding: 100px 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation__form {
+  display: flex;
+  justify-content: center;
+}
+
+.donation__amount {
+  margin-right: 10px;
+  padding: 0 20px;
+  border-radius: 2px;
+  border: 1px solid grey;
+  font-size: 18px;
+}
+
+.map {
+  height: 400px;
+  max-height: 50vh;
+  position: relative;
+}
+
+.map__map {
+  height: 100%;
+  width: 100%;
 }
